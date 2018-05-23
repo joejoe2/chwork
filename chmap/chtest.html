@@ -7,18 +7,19 @@
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<style>
 		*{margin: 0px;padding: 0px;}
-		body{ width: 1000px; }
+		body{ width: 1000px; background-color: black;color: white}
 		#m{width: 800px;height: 800px;float: left;}
 		#h23 div p{float: inherit}
 		p{word-wrap: break-word}
+		
 	</style>
 </head>
-<body>
-  
-  <div id="m">
-  <h1>點擊圖標以獲得更多資訊</h1>
-  <span>1111111111111111111111111111</span>
-  <img src="map1.png" width="800px" height="800px" alt="map" border="0" usemap="#c" float="left">
+<body >
+  <div id="m"  style="margin-left:20%">
+  <h1 style="text-align: center">我的台南飲食紀錄 (by F74062010 劉松霖)</h1><br>
+  <span style="text-align: left;">這個地圖是利用html+javascript網頁技術結合我在成大周邊曾到訪過的店家以及對其簡單的心得感想。由於我是從台北來到台南再加上我沒有買腳踏車的緣故，我的生活圈通常就是在學校附近而已，並不常跑到很遠的地方，因此我選擇了做這個主題，但是老實說繪畫美術不通的我再做這個老梗的主題實在有點無趣，於是便突然想到了何不結合資訊系的擅長領域來把紙本的地圖電子化，也讓我得以有機會學習hotspot技巧以及github page架設免費網頁的方法。最後，本作業使用的照片及程式碼皆出自我手，沒有抄襲別人。</span>
+  <p><br></p>
+  <img src="map1.png" width="800px" height="800px" alt="map" border="0" usemap="#c" float="left" >
   <map name="c">
    <area id="1" shape="circle" coords="384,288,20" alt="台南火車站"  title="台南火車站">
    <area id="2" shape="circle" coords="310,280,15" alt="摩斯漢堡"  title="摩斯漢堡">
@@ -48,7 +49,7 @@
 <div id="d1" >
   <h2 id="t">1</h2>
   <img src="1.jpg" alt="1" width="100px" height="100px" id="i">
-  <p id="introtxt" style="font-size: 150%" ></p>
+  <p id="introtxt" style="font-size: 100%" ></p>
   <div id="h16" hidden="true">
     <ul>
 	  <li><a href="#16-1">麥當勞</a></li>
@@ -78,9 +79,9 @@
 		<li><a href="#23-15">來碗</a></li>
 		<li><a href="#23-16">京正拉麵</a></li>
 		<li><a href="#23-17">阿莫炒飯食堂</a></li>
-		<li><a href="#23-18">11111111</a></li>
+		<li><a href="#23-18">大醬</a></li>
 		<li><a href="#23-19"> 熙悅</a></li>
-	  <li><a href="#23-20">11111111</a></li>
+	  <li><a href="#23-20">奧莉薇</a></li>
 	</ul>
 	  <div id="23-1"><img src="23-1.jpg" width="100px" height="100px" alt="error"><p>111111111</p></div>
 	  <div id="23-2"><img src="23-2.jpg" width="100px" height="100px" alt="error"><p>111111111</p></div>
@@ -108,7 +109,7 @@
 <script>
 		let s=document.getElementById("i");
 		let t=document.getElementById("t");
-	    let intro=new Array("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24");
+	    let intro=new Array("重要地標，也是我要回台北的必經之處，大一上學期我主要是從這裡搭自強烙回家，但是這學期我通常是從此處搭沙崙線再轉乘高鐵，雖然票價差了一倍左右......(760與1350)，但是高鐵只要90分鐘而已且環境整潔舒適。","2","3","4","5","6","7","8","9","10","11","12","我所就讀的科系，分數應該是在成大靠前的吧，上圖為新館而舊館再另一側，新舊館間真的是差異頗大(設備、維護等)，因此目前絕大部分的課程都是在新館進行了。","14","此處有販售文具、日用品、雜物...等各種各樣的東西，價格較便宜，是成大學生必到的熱門景點XD","16","17","18","19","20","21","本學期我的宿舍，周遭環境乾淨，內部設施都還算新(好像之前翻修過)，雖然離我的系館資訊系有點距離，但是離附近吃飯的地方算近，對我來說很方便。","23","24");
 	$(function(){
 		$("#d1").dialog({
 			autoOpen:false,
